@@ -27,9 +27,6 @@ module.exports = merge(baseConfig, {
                 use: [
                     {
                         loader: 'babel-loader',
-                        options: {
-                            presets: ['react'],
-                        },
                     },
                 ],
             },
@@ -44,7 +41,6 @@ module.exports = merge(baseConfig, {
                             localIdentName: '[name]__[local]___[hash:base64:5]',
                         },
                     },
-                    'postcss-loader',
                 ],
             },
             {
@@ -54,10 +50,11 @@ module.exports = merge(baseConfig, {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
+                            modules: {
+                                localIdentName: '[name]__[local]___[hash:base64:5]',
+                            },
                             sourceMap: true,
                             importLoaders: 2,
-                            localIdentName: '[name]__[local]___[hash:base64:5]',
                         },
                     },
                     'sass-loader',

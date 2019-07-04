@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "search/*": [
+        "src/*",
+        "src/*/index"
+      ],
+      "webpack/*": [
+        "webpack/*",
+        "webpack/*/index"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

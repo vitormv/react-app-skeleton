@@ -19,4 +19,3 @@ App.defaultProps = {
 }
 
 export { App };
-

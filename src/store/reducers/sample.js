@@ -14,7 +14,7 @@ export default (state = defaultState, action) => {
                 ...state,
                 items: {
                     ...state.items,
-                    [action.name]: action.value
+                    [action.name]: action.value,
                 },
             };
 
